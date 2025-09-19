@@ -1,0 +1,45 @@
+.editor-container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.menu-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f8f9fa;
+}
+
+.menu-bar .MuiToggleButton-root {
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 0 2px;
+  height: 32px;
+  width: 32px;
+}
+
+.menu-bar .MuiToggleButton-root.Mui-selected {
+    background-color: #e0e0e0;
+}
+
+.editor-content .ProseMirror {
+  min-height: 200px;
+  padding: 16px;
+  outline: none;
+}
+
+.editor-content .ProseMirror p {
+    margin: 0;
+}
+
+/* Placeholder styling */
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #adb5bd;
+  pointer-events: none;
+  height: 0;
+}

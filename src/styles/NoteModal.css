@@ -1,0 +1,33 @@
+.quill-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 250px; /* Ensure a minimum height for the editor */
+}
+
+.quill-wrapper > div { /* Target the root div created by ReactQuill */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: none; /* Remove default border if any */
+}
+
+.ql-toolbar {
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ccc !important;
+  border-bottom: none !important;
+}
+
+.ql-container {
+  flex: 1;
+  overflow-y: auto;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #ccc !important;
+  border-radius: 0 0 4px 4px;
+}
+
+.ql-editor {
+  padding: 12px 15px;
+}
